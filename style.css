@@ -1,0 +1,32 @@
+body {
+	font-family: system-ui, sans-serif;
+}
+
+h5 {
+	font-size: 24px;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.content {
+    height: 100%;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.floating-button {
+    position: fixed;
+    bottom: 26px;
+    right: 16px;
+    z-index: 1000; /* Ensures the button is above other content */
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
