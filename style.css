@@ -83,7 +83,7 @@ body {
 }
 
 .toolbar-title {
-	font-size: 24px;
+	font-size: 23px;
 }
 
 body, html {
@@ -100,9 +100,9 @@ body, html {
 
 .floating-button {
     position: fixed;
-    bottom: 22px;
-    right: 12px;
-    z-index: 1000; /* Ensures the button is above other content */
+    bottom: 18px;
+    right: 8px;
+    z-index: 1; /* Ensures the button is above other content */
     padding: 10px 20px;
     background-color: #007bff;
     color: white;
@@ -112,6 +112,16 @@ body, html {
 }
 
 .divider-spacer {
-  margin-top: 6px;
-  margin-bottom: 6px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.small-toolbar {
+  min-height: 60px;
+}
+
+.topaz {
+  padding: 2px 2px;
+  min-width: 1px;
+  min-height: 1px;
 }
