@@ -3,99 +3,97 @@ body {
 }
 
 :root {
-  --primary: #006b56;
-  --on-primary: #ffffff;
-  --primary-container: #7ef8d5;
-  --on-primary-container: #002018;
-  --secondary: #4b635b;
-  --on-secondary: #ffffff;
-  --secondary-container: #cee9dd;
-  --on-secondary-container: #072019;
-  --tertiary: #416276;
-  --on-tertiary: #ffffff;
-  --tertiary-container: #c4e7ff;
-  --on-tertiary-container: #001e2c;
-  --error: #ba1a1a;
-  --on-error: #ffffff;
-  --error-container: #ffdad6;
-  --on-error-container: #410002;
-  --background: #fbfdfa;
-  --on-background: #191c1b;
-  --surface: #f8faf7;
-  --on-surface: #191c1b;
-  --surface-variant: #dbe5df;
-  --on-surface-variant: #3f4945;
-  --outline: #6f7975;
-  --outline-variant: #bfc9c3;
-  --shadow: #000000;
-  --scrim: #000000;
-  --inverse-surface: #2e312f;
-  --inverse-on-surface: #eff1ee;
-  --inverse-primary: #5fdbba;
-  --surface-dim: #d8dbd8;
-  --surface-bright: #f8faf7;
-  --surface-container-lowest: #ffffff;
-  --surface-container-low: #f2f4f1;
-  --surface-container: #eceeeb;
-  --surface-container-high: #e6e9e6;
-  --surface-container-highest: #e1e3e0;
+--primary:#785900;
+--on-primary:#ffffff;
+--primary-container:#ffdf9e;
+--on-primary-container:#261a00;
+--secondary:#6b5d3f;
+--on-secondary:#ffffff;
+--secondary-container:#f5e0bb;
+--on-secondary-container:#241a04;
+--tertiary:#4a6547;
+--on-tertiary:#ffffff;
+--tertiary-container:#ccebc4;
+--on-tertiary-container:#072109;
+--error:#ba1a1a;
+--on-error:#ffffff;
+--error-container:#ffdad6;
+--on-error-container:#410002;
+--background:#fffbff;
+--on-background:#1e1b16;
+--surface:#fff8f2;
+--on-surface:#1e1b16;
+--surface-variant:#ede1cf;
+--on-surface-variant:#4d4639;
+--outline:#7f7667;
+--outline-variant:#d0c5b4;
+--shadow:#000000;
+--scrim:#000000;
+--inverse-surface:#33302a;
+--inverse-on-surface:#f7efe7;
+--inverse-primary:#fabd00;
+--surface-dim:#e0d9d0;
+--surface-bright:#fff8f2;
+--surface-container-lowest:#ffffff;
+--surface-container-low:#faf2e9;
+--surface-container:#f5ede4;
+--surface-container-high:#efe7de;
+--surface-container-highest:#e9e1d8;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --primary: #5fdbba;
-    --on-primary: #00382c;
-    --primary-container: #005140;
-    --on-primary-container: #7ef8d5;
-    --secondary: #b2ccc2;
-    --on-secondary: #1d352d;
-    --secondary-container: #344c43;
-    --on-secondary-container: #cee9dd;
-    --tertiary: #a8cbe2;
-    --on-tertiary: #0e3446;
-    --tertiary-container: #284b5e;
-    --on-tertiary-container: #c4e7ff;
-    --error: #ffb4ab;
-    --on-error: #690005;
-    --error-container: #93000a;
-    --on-error-container: #ffb4ab;
-    --background: #191c1b;
-    --on-background: #e1e3e0;
-    --surface: #111413;
-    --on-surface: #e1e3e0;
-    --surface-variant: #3f4945;
-    --on-surface-variant: #bfc9c3;
-    --outline: #89938e;
-    --outline-variant: #3f4945;
-    --shadow: #000000;
-    --scrim: #000000;
-    --inverse-surface: #e1e3e0;
-    --inverse-on-surface: #2e312f;
-    --inverse-primary: #006b56;
-    --surface-dim: #111413;
-    --surface-bright: #363a38;
-    --surface-container-lowest: #0b0f0e;
-    --surface-container-low: #191c1b;
-    --surface-container: #1d201f;
-    --surface-container-high: #272b29;
-    --surface-container-highest: #323634;
+--primary:#fabd00;
+--on-primary:#3f2e00;
+--primary-container:#5b4300;
+--on-primary-container:#ffdf9e;
+--secondary:#d8c4a0;
+--on-secondary:#3a2f15;
+--secondary-container:#52452a;
+--on-secondary-container:#f5e0bb;
+--tertiary:#b0cfaa;
+--on-tertiary:#1d361c;
+--tertiary-container:#334d31;
+--on-tertiary-container:#ccebc4;
+--error:#ffb4ab;
+--on-error:#690005;
+--error-container:#93000a;
+--on-error-container:#ffb4ab;
+--background:#1e1b16;
+--on-background:#e9e1d8;
+--surface:#16130e;
+--on-surface:#e9e1d8;
+--surface-variant:#4d4639;
+--on-surface-variant:#d0c5b4;
+--outline:#998f80;
+--outline-variant:#4d4639;
+--shadow:#000000;
+--scrim:#000000;
+--inverse-surface:#e9e1d8;
+--inverse-on-surface:#33302a;
+--inverse-primary:#785900;
+--surface-dim:#16130e;
+--surface-bright:#3c3933;
+--surface-container-lowest:#100e09;
+--surface-container-low:#1e1b16;
+--surface-container:#221f1a;
+--surface-container-high:#2d2924;
+--surface-container-highest:#38342e;
   }
 }
 
-.toolbar-title {
+.appbar-title {
 	font-size: 23px;
+}
+
+.appbar-title-big {
+  font-size: 38px;
 }
 
 body, html {
     margin: 0;
     padding: 0;
     height: 100%;
-}
-
-.content {
-    height: 100%;
-    background-color: #f0f0f0;
-    padding: 20px;
 }
 
 .floating-button {
@@ -111,17 +109,6 @@ body, html {
     cursor: pointer;
 }
 
-.divider-spacer {
-  margin-top: 8px;
-  margin-bottom: 8px;
-}
-
-.small-toolbar {
-  min-height: 60px;
-}
-
-.topaz {
-  padding: 2px 2px;
-  min-width: 1px;
-  min-height: 1px;
+.appbar {
+  min-height: 68px;
 }

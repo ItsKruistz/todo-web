@@ -8,47 +8,38 @@
     <link href="beer.min.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
     <script type="module" src="beer.min.js"></script>
+    <script src="main.js"></script>
   </head>
   <body>
     
-<header>
+<header class="transparent">
   <nav>
-    <button class="circle small transparent">
+    <button class="circle small transparent" id="back-link">
       <i>arrow_back</i>
     </button>
-    <div class="max"></div>
-    <button class="circle small transparent">
-      <i>attach_file</i>
-    </button>
-    <button class="circle small transparent">
-      <i>today</i>
-    </button>
-    <button class="circle small transparent">
-      <i>more_vert</i>
-    </button>
   </nav>
-  <div class="medium-space"></div>
-  <h5 class="small-padding">Headline medium</h5>
+  <div class="small-space"></div>
+  <h5 class="small-padding appbar-title-big">Settings</h5>
 </header>
   <a class="row padding wave round">
-    <i>brush</i>
+    <i>settings</i>
     <div class="max">
-      <h6 class="big">Headline</h6>
-      <div>Supporting text</div>
+      <h6 class="big">General</h6>
+      <div>General settings, view mode</div>
     </div>
   </a>
   <a class="row padding wave round">
     <i>brush</i>
     <div class="max">
-      <h6 class="big">Headline</h6>
-      <div>Supporting text</div>
+      <h6 class="big">Appearance</h6>
+      <div>Dark theme, color palettes</div>
     </div>
   </a>
-  <a class="row padding wave round">
-    <i>brush</i>
+  <a class="row padding wave round" href="about.html">
+    <i>info</i>
     <div class="max">
-      <h6 class="big">Headline</h6>
-      <div>Supporting text</div>
+      <h6 class="big">About</h6>
+      <div>Contributors, changelogs</div>
     </div>
   </a>
 <main class="responsive">
