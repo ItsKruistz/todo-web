@@ -1,114 +1,161 @@
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
 body {
-	font-family: system-ui, sans-serif;
+  font-family: system-ui, sans-serif;
 }
 
 :root {
---primary:#785900;
---on-primary:#ffffff;
---primary-container:#ffdf9e;
---on-primary-container:#261a00;
---secondary:#6b5d3f;
---on-secondary:#ffffff;
---secondary-container:#f5e0bb;
---on-secondary-container:#241a04;
---tertiary:#4a6547;
---on-tertiary:#ffffff;
---tertiary-container:#ccebc4;
---on-tertiary-container:#072109;
---error:#ba1a1a;
---on-error:#ffffff;
---error-container:#ffdad6;
---on-error-container:#410002;
---background:#fffbff;
---on-background:#1e1b16;
---surface:#fff8f2;
---on-surface:#1e1b16;
---surface-variant:#ede1cf;
---on-surface-variant:#4d4639;
---outline:#7f7667;
---outline-variant:#d0c5b4;
---shadow:#000000;
---scrim:#000000;
---inverse-surface:#33302a;
---inverse-on-surface:#f7efe7;
---inverse-primary:#fabd00;
---surface-dim:#e0d9d0;
---surface-bright:#fff8f2;
---surface-container-lowest:#ffffff;
---surface-container-low:#faf2e9;
---surface-container:#f5ede4;
---surface-container-high:#efe7de;
---surface-container-highest:#e9e1d8;
+  --primary: #785900;
+  --on-primary: #ffffff;
+  --primary-container: #ffdf9e;
+  --on-primary-container: #261a00;
+  --secondary: #6b5d3f;
+  --on-secondary: #ffffff;
+  --secondary-container: #f5e0bb;
+  --on-secondary-container: #241a04;
+  --tertiary: #4a6547;
+  --on-tertiary: #ffffff;
+  --tertiary-container: #ccebc4;
+  --on-tertiary-container: #072109;
+  --error: #ba1a1a;
+  --on-error: #ffffff;
+  --error-container: #ffdad6;
+  --on-error-container: #410002;
+  --background: #fffbff;
+  --on-background: #1e1b16;
+  --surface: #fff8f2;
+  --on-surface: #1e1b16;
+  --surface-variant: #ede1cf;
+  --on-surface-variant: #4d4639;
+  --outline: #7f7667;
+  --outline-variant: #d0c5b4;
+  --shadow: #000000;
+  --scrim: #000000;
+  --inverse-surface: #33302a;
+  --inverse-on-surface: #f7efe7;
+  --inverse-primary: #fabd00;
+  --surface-dim: #e0d9d0;
+  --surface-bright: #fff8f2;
+  --surface-container-lowest: #ffffff;
+  --surface-container-low: #faf2e9;
+  --surface-container: #f5ede4;
+  --surface-container-high: #efe7de;
+  --surface-container-highest: #e9e1d8;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
---primary:#fabd00;
---on-primary:#3f2e00;
---primary-container:#5b4300;
---on-primary-container:#ffdf9e;
---secondary:#d8c4a0;
---on-secondary:#3a2f15;
---secondary-container:#52452a;
---on-secondary-container:#f5e0bb;
---tertiary:#b0cfaa;
---on-tertiary:#1d361c;
---tertiary-container:#334d31;
---on-tertiary-container:#ccebc4;
---error:#ffb4ab;
---on-error:#690005;
---error-container:#93000a;
---on-error-container:#ffb4ab;
---background:#1e1b16;
---on-background:#e9e1d8;
---surface:#16130e;
---on-surface:#e9e1d8;
---surface-variant:#4d4639;
---on-surface-variant:#d0c5b4;
---outline:#998f80;
---outline-variant:#4d4639;
---shadow:#000000;
---scrim:#000000;
---inverse-surface:#e9e1d8;
---inverse-on-surface:#33302a;
---inverse-primary:#785900;
---surface-dim:#16130e;
---surface-bright:#3c3933;
---surface-container-lowest:#100e09;
---surface-container-low:#1e1b16;
---surface-container:#221f1a;
---surface-container-high:#2d2924;
---surface-container-highest:#38342e;
+    --primary: #fabd00;
+    --on-primary: #3f2e00;
+    --primary-container: #5b4300;
+    --on-primary-container: #ffdf9e;
+    --secondary: #d8c4a0;
+    --on-secondary: #3a2f15;
+    --secondary-container: #52452a;
+    --on-secondary-container: #f5e0bb;
+    --tertiary: #b0cfaa;
+    --on-tertiary: #1d361c;
+    --tertiary-container: #334d31;
+    --on-tertiary-container: #ccebc4;
+    --error: #ffb4ab;
+    --on-error: #690005;
+    --error-container: #93000a;
+    --on-error-container: #ffb4ab;
+    --background: #1e1b16;
+    --on-background: #e9e1d8;
+    --surface: #16130e;
+    --on-surface: #e9e1d8;
+    --surface-variant: #4d4639;
+    --on-surface-variant: #d0c5b4;
+    --outline: #998f80;
+    --outline-variant: #4d4639;
+    --shadow: #000000;
+    --scrim: #000000;
+    --inverse-surface: #e9e1d8;
+    --inverse-on-surface: #33302a;
+    --inverse-primary: #785900;
+    --surface-dim: #16130e;
+    --surface-bright: #3c3933;
+    --surface-container-lowest: #100e09;
+    --surface-container-low: #1e1b16;
+    --surface-container: #221f1a;
+    --surface-container-high: #2d2924;
+    --surface-container-highest: #38342e;
   }
 }
 
+.appbar {
+  min-height: 68px;
+  position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+z-index: 1;
+}
+
 .appbar-title {
-	font-size: 23px;
+  font-size: 23px;
+  letter-spacing: 0.2px;
 }
 
 .appbar-title-big {
   font-size: 38px;
 }
 
-body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
+.note {
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .floating-button {
-    position: fixed;
-    bottom: 18px;
-    right: 8px;
-    z-index: 1; /* Ensures the button is above other content */
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+  position: fixed;
+  bottom: 18px;
+  right: 8px;
+  z-index: 1;
+  cursor: pointer;
 }
 
-.appbar {
-  min-height: 68px;
+svg, i {
+  border-radius: 0;
+}
+
+iframe {
+  border: 0;
+    display: block;  /* iframes are inline by default */   
+        height: 100vh;  /* Set height to 100% of the viewport height */   
+        width: 100vw;
+}
+
+.iframe-container {
+  display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;     /* OLD - Firefox 19- (buggy) */
+  display: -ms-flexbox;  /* TWEENER - IE 10 */
+  display: -webkit-flex; /* NEW - Chrome */
+  display: flex;         /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  height: 100vh;         /* Adjusts the height to 100% of the viewport */
+}
+
+#iframe-container > iframe {
+  border: none;          /* Removes the default border around iframes */
+}
+
+#left_frame {
+  -webkit-box-flex: 0;   /* OLD - iOS 6-, Safari 3.1-6 */
+  -moz-box-flex: 0;      /* OLD - Firefox 19- (buggy) */
+  -webkit-flex: 0;       /* Chrome */
+  -ms-flex: 0;           /* IE 10 */
+  flex: 0 0 140px;       /* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+
+#right_frame {
+  -webkit-box-flex: 1;   /* OLD - iOS 6-, Safari 3.1-6 */
+  -moz-box-flex: 1;      /* OLD - Firefox 19- (buggy) */
+  -webkit-flex: 1;       /* Chrome */
+  -ms-flex: 1;           /* IE 10 */
+  flex-grow: 1;          /* NEW, Spec - Opera 12.1, Firefox 20+ */
 }

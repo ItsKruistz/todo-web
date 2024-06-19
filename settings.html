@@ -7,43 +7,13 @@
     <title>Notes</title>
     <link href="beer.min.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
-    <script type="module" src="beer.min.js"></script>
     <script src="main.js"></script>
+    <script type="module" src="beer.min.js"></script>
   </head>
   <body>
-    
-<header class="transparent">
-  <nav>
-    <button class="circle small transparent" id="back-link">
-      <i>arrow_back</i>
-    </button>
-  </nav>
-  <div class="small-space"></div>
-  <h5 class="small-padding appbar-title-big">Settings</h5>
-</header>
-  <a class="row padding wave round">
-    <i>settings</i>
-    <div class="max">
-      <h6 class="big">General</h6>
-      <div>General settings, view mode</div>
+    <div class="iframe-container">
+    <iframe id="left-frame" src="setting-screen.html"></iframe>
+    <iframe id="right-frame" src="setting-screen.html" class="m l"></iframe>
     </div>
-  </a>
-  <a class="row padding wave round">
-    <i>brush</i>
-    <div class="max">
-      <h6 class="big">Appearance</h6>
-      <div>Dark theme, color palettes</div>
-    </div>
-  </a>
-  <a class="row padding wave round" href="about.html">
-    <i>info</i>
-    <div class="max">
-      <h6 class="big">About</h6>
-      <div>Contributors, changelogs</div>
-    </div>
-  </a>
-<main class="responsive">
-</div>
-    </main>
   </body>
 </html>
